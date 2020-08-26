@@ -209,7 +209,13 @@
         }
         
 
-
+        @media only screen and (max-width: 1046px){
+            #card{
+                display: block;
+                margin: auto;
+            }
+            
+        }
 
         @media only screen and (max-width: 1013px) {
             .nav-link{
@@ -265,6 +271,12 @@
                 font-size: 10px;
             }
         }
+        @media only screen and (max-width: 768px){
+           .card-img {
+                width: 50px;
+            }
+        }
+
         @media only screen and (max-width: 700px){
             #check:checked ~ main #carouselExampleCaptions{
             width: 63.3%; 
@@ -419,9 +431,9 @@
   <div style="height: 500px;"></div>
 
 
-<div style="text-align: center;">
+<div id="cards" style="text-align: center;">
 
-  <div id="card" class="card mb-3" style="max-width: 300px; height: 200px;">
+  <div id="card" class="card mb-3" style="max-width: 300px; height: 200px; ">
     <div class="row no-gutters">
       <div class="col-md-4">
         <img src="https://cdn4.iconfinder.com/data/icons/world-flags-12/512/Untitled-2-01-512.png" class="card-img" alt="الصورة غير موجودة على جهازك">
