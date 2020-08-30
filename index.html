@@ -165,7 +165,7 @@
 <div id="video">
   <div id="video-image">
     <img id="img-video" src="test/slideshow/1.png" >
-    <div id="icon-video"><i id="video-icon" class='fas fa-play-circle' onclick="blankVideo()"></i></div>
+    <div id="icon-video"><i id="video-icon" onclick="toggle();" class='fas fa-play-circle'></i></div>
   </div>
   <div id="video-services">
     <h1 class="service1">كلمات عنا</h1>
@@ -173,22 +173,92 @@
     <br>
     <br>
     <br>
-    <h3 class="service">مهمتنا</h3>
+    <div id="mition">
+      <i id="icon-service" class="fas fa-paste"></i>
+      <span class="service">مهمتنا</span>
+    </div>
     <h5 class="description">الوصف</h5>
-    <br>    
-    <h3 class="service">رؤيتنا</h3>
+    <br>
+    <div id="mition">
+      <i id="icon-service" class="fas fa-globe-europe"></i>
+      <span class="service">رؤيتنا</span>
+    </div>    
     <h5 class="description">الوصف</h5>
     <div id="button-services"><button id="services-button" type="button">المزيد عن نورتيك</button></div>
   </div>
 </div>
-
-<div  class="blank">
-  <div class="blank-video">
-    <h6>الفيديو هنا</h6>
+<div id="container">  
+  <i class="fas fa-times" onclick="toggle();" id="blank-close"></i>
+  <div  class="blank">    
+    <div class="blank-video">
+      <h6>الفيديو هنا</h6>
+    </div>
   </div>
 </div>
 
-  
+
+<div id="ourservices-background">
+  <div id="ourservices-title">
+    <h1 style="color: yellow;">الخدمات</h1>
+    <h4 style="color: white;">الوصف</h4>
+  </div>
+  <div id="oursevices-box">
+    <div id="ourservices-top">
+      <div id="topservice">
+        <span id="effect-service"></span>
+        <i id="service-icon-box" class="fas fa-briefcase"></i>
+        <br>
+        <h3 id="servicebox-title">الخدمة</h3>
+        <h6 id="servicebox-description">الوصف</h6>       
+      </div>
+      <div id="topservice">
+        <i id="service-icon-box" class="fas fa-bullhorn"></i>
+        <br>
+        <h3 id="servicebox-title">الخدمة</h3>
+        <h6 id="servicebox-description">الوصف</h6>
+        <span id="effect-service"></span>
+      </div>
+      <div id="topservice">
+        <i id="service-icon-box" class="fas fa-chart-line"></i>
+        <br>
+        <h3 id="servicebox-title">الخدمة</h3>
+        <h6 id="servicebox-description">الوصف</h6>
+        <span id="effect-service"></span>
+      </div>
+    </div>
+    <div id="ourservices-top">
+      <div id="topservice">
+        <i id="service-icon-box" class="fas fa-globe"></i>
+        <br>
+        <h3 id="servicebox-title">الخدمة</h3>
+        <h6 id="servicebox-description">الوصف</h6>
+        <span id="effect-service"></span>
+      </div>
+      <div id="topservice">
+        <i id="service-icon-box" class="fas fa-wallet"></i>
+        <br>
+        <h3 id="servicebox-title">الخدمة</h3>
+        <h6 id="servicebox-description">الوصف</h6>
+        <span id="effect-service"></span>
+      </div>
+      <div id="topservice">
+        <i id="service-icon-box" class="fas fa-audio-description"></i>
+        <br>
+        <h3 id="servicebox-title">الخدمة</h3>
+        <h6 id="servicebox-description">الوصف</h6>
+        <span id="effect-service"></span>
+      </div>
+    </div>
+  </div>
+  <div id="button-services-box"><button id="services-button" type="button">المزيد من الخدمات</button></div>
+</div>
+
+
+
+
+
+
+<a href="#toppart" id="arrow-link"><i class="fas fa-chevron-circle-up" id="arrow-up"></i></a>
 <script src="scripts.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
