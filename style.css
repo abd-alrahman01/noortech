@@ -511,17 +511,20 @@
         }
         #communication-txt-box{
             position: absolute;
-            width: 80%;
+            width: 70%;
             margin-right: 10%;
             height: 100%;
+            /* margin-top: 20px; */
         }
         #communication-icon{
             /* position: absolute; */
-            width: 100%;
+            width: 70%;
             text-align: center;
-            height: 80px;
+            height: 50px;
             margin: auto;
-            margin-top: 100px;
+            margin-top: 80px;
+            margin-bottom: 20px;
+            
         }
         #communication-text-in{
             width: 50%;
@@ -531,11 +534,13 @@
             text-align: right;
         }
         #communication-txt i{
+            
             position: absolute;
-            font-size: 40px;
+            right: 40%;
+            font-size: 50px;
             border-radius: 50%;
-            color: white;
-            background-color: #0f203a;
+            color: yellow;
+            
         }
         #communication-form{
             float: left;
@@ -828,13 +833,13 @@
                 height: 200px;
             }
             #communication-box{
-                height: 800px;
+                height: 700px;
             }
             #communication-img{
                 clear: both;
                 display: block;
                 width: 100%;
-                height: 300px;
+                height: 200px;
             }
             #communication-form{
                 clear: both;
@@ -886,6 +891,7 @@
                 height: 170px;
             }
             .form-btn{
+                width: 120px;
                 margin: 10px 20px;
             }
             #communication-txt-box{
@@ -911,11 +917,16 @@
             #works-title h2{
                 font-size: 20px;
             }
-            #communication-text-in h2{
-                font-size: 25px;
-            }
             #communication-text-in h3{
                 font-size: 20px;
+            }
+            #communication-text-in h4{
+                font-size: 15px;
+            }
+            .form-btn{
+                display: inline-block;
+                width: 105px;
+                margin: 10px 0px;
             }
             
               
@@ -961,12 +972,19 @@
                 width: 60%;
                 height: 150px;
             }
-            .form-btn{
-
-                margin: 10px 10px;
-
+            #communication-text-in h2{
+                font-size: 15px;
             }
-                
+            #communication-text-in h3{
+                font-size: 13px;
+            }
+            #communication-text-in h4{
+                font-size: 11px;
+            }
+            #communication-form{
+                height: 500px;
+            }
+                  
         }
 
 
