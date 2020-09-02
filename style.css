@@ -922,6 +922,10 @@
             }
             #communication-text-in h4{
                 font-size: 15px;
+            }#communication-txt-box{
+
+                margin-right: 18%;
+
             }
             .form-btn{
                 display: inline-block;
