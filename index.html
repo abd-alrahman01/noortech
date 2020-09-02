@@ -275,7 +275,7 @@
     <div id="works">
         <div id="works-title">
             <h5 style="color:yellow; padding-bottom: 10px;">أخر أعمالنا</h5>
-            <h1 style="color:#0f203a;">اكتشف آخر ما قدمناه من أعمال وأنشطة مبتكرة لعملائنا</h1>
+            <h2 style="color:#0f203a;">اكتشف آخر ما قدمناه من أعمال وأنشطة مبتكرة لعملائنا</h2>
         </div>
         <div id="works-cards">
             <div id="top-cards">
@@ -310,7 +310,54 @@
         <div id="button-works"><button class="works-button" id="services-button" type="button">كل الأعمال</button></div>
     </div>
 
-
+    <div id="communication-box">
+        <div class="communication" id="communication-img">
+            <img id="communication-image" src="test/img/contact.jpg" >
+            <div id="communication-txt">
+                <div id="communication-txt-box">
+                    <div id="communication-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <div id="communication-text-in">
+                        <h2>مهتم؟</h2>
+                        <br>
+                        <h3>أدخل بياناتك</h3>
+                        <h4>وسنعاود الاتصال بك</h4>
+                    </div>
+                </div>                
+            </div>
+        </div>
+        <div class="communication" id="communication-form">
+            <form method="GET">
+                <div id="form-style">
+                    <input class="form" type="text" name="name" id="communication-name" required>
+                    <label class="form-label" for="name">
+                        <span>الاسم</span>
+                    </label>
+                </div>
+                <div id="form-style">
+                    <input class="form" type="tel" name="mobile-number" id="communication-mobile" required>
+                    <label class="form-label" for="mobile-number">
+                        <span>رقم الهاتف</span>
+                    </label>
+                </div>
+                <div id="form-style">
+                    <input class="form" type="email" name="email" id="communication-email" required>
+                    <label class="form-label" for="email">
+                        <span>البريد الاكترونى</span> 
+                    </label>
+                </div>
+                <div id="form-textarea">
+                    <textarea name="will" class="form-textarea" id="communication-will" cols="30" rows="10" required></textarea>
+                    <label class="textarea-label" for="will">
+                       <span>الطلب</span>  
+                    </label>
+                </div>                                
+                <button type="submit" class="form-btn" id="services-button">ارسال البيانات</button>
+                <button type="reset" class="form-btn" id="services-button">حذف البيانات</button>
+            </form>
+        </div>
+    </div>
 
 
 

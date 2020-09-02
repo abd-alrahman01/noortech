@@ -448,7 +448,7 @@
             position: absolute;
             border-radius: 5px;
             backface-visibility: hidden;
-            transition: transform 1s linear;
+            transition: transform .8s linear;
         }
         #card-front{
             z-index: 2;
@@ -479,6 +479,169 @@
         }
         .works-button{
             width: 130px;
+        }
+        #communication-box{
+            width: 100%;
+            height: 500px;
+        }
+        .communication{
+            width: 50%;
+            height: 100%;
+        }
+        #communication-img{
+            float: right;
+            position: relative;
+        }
+        #communication-image{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            right: 0px;
+            object-fit: cover;
+            background-color:  #0f203a;
+        }
+        #communication-txt{
+            position: relative;
+            text-align: center;
+            width: 100%;
+            height: 100%;
+            color: white;
+            background-color: #0f203af1;
+            text-align: center;
+        }
+        #communication-txt-box{
+            position: absolute;
+            width: 80%;
+            margin-right: 10%;
+            height: 100%;
+        }
+        #communication-icon{
+            /* position: absolute; */
+            width: 100%;
+            text-align: center;
+            height: 80px;
+            margin: auto;
+            margin-top: 100px;
+        }
+        #communication-text-in{
+            width: 50%;
+            margin: auto;
+            /* margin-top: 200px; */
+            top: 200px;
+            text-align: right;
+        }
+        #communication-txt i{
+            position: absolute;
+            font-size: 40px;
+            border-radius: 50%;
+            color: white;
+            background-color: #0f203a;
+        }
+        #communication-form{
+            float: left;
+            width: 50%;
+            height: 100%;
+            background-color: #0f203a;
+            text-align: center;
+        }
+        #communication-form form{
+            width: 80%;
+            margin: 70px auto;
+        }       
+        #form-style{
+            position: relative;
+            display: block;
+            width: 100%;
+            margin: 10px auto;                        
+            height: 50px;
+            overflow: hidden; 
+        }
+        #form-textarea{
+            position: relative;
+            display: block;
+            width: 100%;
+            margin: 10px auto;                        
+            height: 150px;
+            
+        }
+        .form{
+            width: 100%;
+            height: 100%;
+            outline: 0px;
+            border: 0px;
+            padding-top: 10px;    
+        }
+        .form-textarea{
+            width: 100%;
+            height: 100%;
+            outline: 0px;
+            border: 0px;
+            padding-top: 15px;
+        }
+        .form-label{
+            width: 100%;
+            position: absolute;
+            right: 0px;
+            padding-right: 5px;
+            bottom: -8px;
+            border-bottom: 1px solid;
+            height: 50px;
+            /* height: 100%; */
+            pointer-events: none;
+            text-align: right;
+        }
+        .form-label::after{
+            content: "";
+            position: absolute;
+            right: 0px;
+            bottom: -1px;
+            height: 100%;
+            width: 100%;
+            border-bottom: 4px solid yellow;
+            transform: translateX(100%);
+            transition: transform 0.5s ease;
+        }
+        .form-label span{
+            position: absolute;
+            bottom: 5px;
+            right: 5px;
+            transition: all 0.5s ease;
+        }
+        .form:focus + .form-label span{
+            transform: translateY(-120%);
+            font-size: 14px;
+            color: yellow;
+        }
+        .form:valid + .form-label span{
+            transform: translateY(-120%);
+            font-size: 14px;
+            color: green;
+        }
+        .form-textarea:focus + .textarea-label{
+            top: 0px;
+            font-weight: bold;
+            font-size: 14px;
+            color: yellow;
+        }
+        .form-textarea:valid + .textarea-label{
+            top: 0px;
+            font-weight: bold;
+            font-size: 14px;
+            color: green;
+        }
+        .form:focus + .form-label::after{
+            transform: translateX(0%);
+        }
+        .textarea-label{
+            position: absolute;
+            right: 5px;
+            top: 20px;
+            pointer-events: none;
+            transition: all 0.5s ease;
+        }
+        .form-btn{
+            width: 130px;
+            margin: 10px 30px;
         }
 
         
@@ -565,6 +728,12 @@
             #carouselExampleCaptions,.img1{
                 height: 400px;
             }
+            .form-btn{
+                margin: 10px 20px;
+            }
+            #communication-text-in h4{
+                font-size: 20px;
+            }
             
             #check:checked ~ main #carouselExampleCaptions{
             width: 74.6%;
@@ -596,7 +765,7 @@
                 left: 400px;
             }
             #button-services-box{
-                bottom: 40px;
+                bottom: 30px;
             }
             .blank-video{
                 height: 250px;
@@ -632,7 +801,10 @@
         @media only screen and (max-width: 900px){
             #check:checked ~ main #carouselExampleCaptions{
             width: 71.5%; 
-            }   
+            }
+            .form-btn{
+                margin: 10px 10px;
+            }  
         }
         @media only screen and (max-width: 800px){
             #carouselExampleCaptions,.img1{
@@ -654,6 +826,30 @@
             }
             .blank-video{
                 height: 200px;
+            }
+            #communication-box{
+                height: 800px;
+            }
+            #communication-img{
+                clear: both;
+                display: block;
+                width: 100%;
+                height: 300px;
+            }
+            #communication-form{
+                clear: both;
+                display: block;
+                width: 100%;
+                height: 500px;
+            }
+            #communication-icon{
+                margin-top: 20px;
+            }
+            #communication-txt-box{
+                margin-right: 18%;
+            }
+            .form-btn{
+                margin: 10px 50px;
             }
         }
         @media only screen and (max-width: 768px){
@@ -688,21 +884,39 @@
             }
             .blank-video{
                 height: 170px;
-            } 
+            }
+            .form-btn{
+                margin: 10px 20px;
+            }
+            #communication-txt-box{
+                margin-right: 13%;
+            }
         }            
         @media only screen and (max-width: 560px){
             .blank-video{
                 height: 150px;
             }
             #works{
-                height: 500px;
+                height: 400px;
             }
             #works-cards{
                 height: 200px;
             }
             #top-cards{
                 height: 100px;
-            } 
+            }
+            #ourservices-title h2{
+                font-size: 20px;
+            }
+            #works-title h2{
+                font-size: 20px;
+            }
+            #communication-text-in h2{
+                font-size: 25px;
+            }
+            #communication-text-in h3{
+                font-size: 20px;
+            }
             
               
             /* #check:checked ~ main #carouselExampleCaptions{
@@ -731,7 +945,7 @@
                 height: 100px;
             }
             #works{
-                height: 1200px;
+                height: 1120px;
             }
             #works-cards{
                 height: 910px;
