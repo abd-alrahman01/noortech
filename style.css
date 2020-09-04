@@ -92,10 +92,10 @@
             height: 450px;
             width: 100%;
             size: cover;
-            transition: all 0.5s ease;
+            object-fit: cover;
         }
         #slide-label{
-            color: green;
+            color:yellow;
         }
         #slide-p{
             color: red;
@@ -191,16 +191,41 @@
             width: 74.9%;
             
         }
-        .card-body{
-            text-align: right;
+        #space{
+            height: 500px;
         }
-        #card{
-            transition: all .7s ease;
-            display: inline-block;
-            margin: 0px 20px;
+        #work-manage{
+            position: absolute;
+            font-size: 30px;
+            right: 30%;
+            top: 15px;
+            color: #0f203a;
+            z-index: 2;
+            transition: all 0.8s ease;
         }
-        #card:hover{
-            background: yellow;
+        #manage-p{
+            position: absolute;
+            text-align: center;
+            z-index: 2;
+            font-weight: bold;
+            color: #0f203a;
+            top: 70px;
+            transition: all 0.8s ease;
+        }
+        .manage-effect{
+            width: 0%;
+            height: 298px;
+            position: absolute;
+            top: 0px;
+            background-color: #0f203a;
+            transition: all 0.5s ease;
+            z-index: 1;
+        }
+        #topservice:hover .manage-effect{
+            width: 100%;
+        }
+        #topservice:hover #work-manage, #topservice:hover #manage-p{
+            color:yellow;
         }
         #video{
             width: 100%;
@@ -215,10 +240,11 @@
         }
         #img-video{
             width: 100%;
-            height: 100%;
-            size: cover;
+            height: 70%;
+            object-fit: cover;
             position: absolute;
             right: 0px;
+            top: 15%;
         }
         #video-title{
             position: absolute;
@@ -608,17 +634,17 @@
         }
         .form-label span{
             position: absolute;
-            bottom: 5px;
+            bottom: 10px;
             right: 5px;
             transition: all 0.5s ease;
         }
         .form:focus + .form-label span{
-            transform: translateY(-120%);
+            transform: translateY(-100%);
             font-size: 14px;
             color: yellow;
         }
         .form:valid + .form-label span{
-            transform: translateY(-120%);
+            transform: translateY(-100%);
             font-size: 14px;
             color: green;
         }
@@ -648,6 +674,7 @@
             width: 130px;
             margin: 10px 30px;
         }
+        
 
         
             
@@ -676,6 +703,16 @@
             }
             
         }
+        @media only screen and (max-width: 1125px){
+            #video{
+                height: 600px;
+            }
+        }
+        @media only screen and (max-width: 1070px){
+            #nav-h{
+                font-size: 18px;
+            }
+        }
         @media only screen and (max-width: 1046px){
             #card{
                 display: block;
@@ -693,7 +730,7 @@
             #topservice{
                 height: 250px;
             }
-            #effect-service{
+            #effect-service,.manage-effect{
                 height: 250px;
             }
             #service-icon-box{
@@ -757,6 +794,9 @@
                 height: 500px;
                 clear: both;
             }
+            #img-video{
+                height: 100%;
+            }
             #video-services{
                 width: 100%;
                 height: 500px;
@@ -789,7 +829,7 @@
                 width: 100%;
                 height: 200px;
             }
-            #effect-service{
+            #effect-service,.manage-effect{
                 height: 200px;
             }
             #works{
@@ -800,6 +840,9 @@
             }
             #top-cards{
                 height: 250px;
+            }
+            #work-manage{
+                right: 15%;
             }
             
         }    
@@ -824,7 +867,7 @@
             height: 200px;
             }
             #slide-label{
-                font-size: 20px;
+                font-size: 15px;
             }
             #slide-p{
                 font-size: 10px;
@@ -856,11 +899,16 @@
             .form-btn{
                 margin: 10px 50px;
             }
+            #space{
+                height: 400px;
+            }
         }
         @media only screen and (max-width: 768px){
            .card-img {
                 width: 50px;
             }
+            
+            
         }
 
         @media only screen and (max-width: 700px){
@@ -875,7 +923,14 @@
             }
             #top-cards{
                 height: 200px;
-            }          
+            }
+            #video-image{
+                height: 400px;
+            }
+            /* #video{
+                height: 950px;
+            } */
+                    
         }        
         @media only screen and (max-width: 676px){
             #phone,#email{
@@ -897,6 +952,9 @@
             #communication-txt-box{
                 margin-right: 13%;
             }
+            /* #video{
+                height: 1100px;
+            } */
         }            
         @media only screen and (max-width: 560px){
             .blank-video{
@@ -922,10 +980,6 @@
             }
             #communication-text-in h4{
                 font-size: 15px;
-            }#communication-txt-box{
-
-                margin-right: 18%;
-
             }
             .form-btn{
                 display: inline-block;
@@ -933,11 +987,7 @@
                 margin: 10px 0px;
             }
             
-              
-            /* #check:checked ~ main #carouselExampleCaptions{
-            width: 53.8%;
-            }
-        } */
+        }      
         /* @media only screen and (max-width: 500px){
             #check:checked ~ main #carouselExampleCaptions{
             width: 48%;
@@ -947,12 +997,8 @@
             width: 100%;
             height: 150px;
             }*/
-        }  
+          
          @media only screen and (max-width: 400px){
-           /*  #check:checked ~ main #carouselExampleCaptions{
-                width: 10%;
-                transition:all 0.5s ease ;
-            } */
             #carouselExampleCaptions,.img1{
                 height: 150px;
             }  
@@ -988,7 +1034,9 @@
             #communication-form{
                 height: 500px;
             }
-                  
+            #space{
+                height: 200px;
+            }                 
         }
 
 
