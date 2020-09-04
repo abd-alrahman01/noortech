@@ -198,7 +198,7 @@
             position: absolute;
             font-size: 30px;
             right: 30%;
-            top: 20px;
+            top: 30px;
             color: #0f203a;
             z-index: 2;
             transition: all 0.8s ease;
@@ -209,7 +209,7 @@
             z-index: 2;
             font-weight: bold;
             color: #0f203a;
-            top: 80px;
+            top: 90px;
             transition: all 0.8s ease;
         }
         .manage-effect{
