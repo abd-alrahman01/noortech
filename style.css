@@ -896,6 +896,9 @@
                 width: 105px;
                 margin: 10px 0px;
             }
+            #topservice h6{
+                font-size: 13px;
+            }
             
         }      
         /* @media only screen and (max-width: 500px){
